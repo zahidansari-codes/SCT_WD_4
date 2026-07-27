@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Modern Todo App</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="bg-circle one"></div>
+<div class="bg-circle two"></div>
+
+<div class="container">
+
+<div class="todo-box">
+
+<h1>
+
+<i class="fa-solid fa-list-check"></i>
+
+Task Manager
+
+</h1>
+
+<div class="input-area">
+
+<input
+type="text"
+id="taskInput"
+placeholder="Enter a task...">
+
+<select id="priority">
+
+<option value="High">High</option>
+
+<option value="Medium">Medium</option>
+
+<option value="Low">Low</option>
+
+</select>
+
+<input
+type="date"
+id="taskDate">
+
+<button id="addBtn">
+
+<i class="fa-solid fa-plus"></i>
+
+Add
+
+</button>
+
+</div>
+
+<div class="toolbar">
+
+<input
+type="text"
+id="search"
+placeholder="Search task...">
+
+<select id="filter">
+
+<option value="all">All</option>
+
+<option value="completed">Completed</option>
+
+<option value="pending">Pending</option>
+
+</select>
+
+</div>
+
+<div class="stats">
+
+<div>
+
+<h3 id="totalTasks">
+
+0
+
+</h3>
+
+<p>Total</p>
+
+</div>
+
+<div>
+
+<h3 id="completedTasks">
+
+0
+
+</h3>
+
+<p>Completed</p>
+
+</div>
+
+<div>
+
+<h3 id="pendingTasks">
+
+0
+
+</h3>
+
+<p>Pending</p>
+
+</div>
+
+</div>
+
+<ul id="taskList">
+
+</ul>
+
+<div id="emptyState">
+
+<i class="fa-solid fa-clipboard-list"></i>
+
+<p>No tasks added yet.</p>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
